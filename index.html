@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ===== Security hardening (client-side, static-site appropriate) ===== -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.web3forms.com; frame-ancestors 'none'; base-uri 'self'; form-action https://api.web3forms.com;">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()">
 <title>NYN Industries – Robotics, SPM & Automation Solutions | Aurangabad</title>
 <meta name="description" content="NYN Industries – Leading provider of Robotics, SPM & Automation Solutions. Founded 2016, Chhatrapati Sambhajinagar (Aurangabad). Serving Automotive, Steel, Heavy Machinery industries.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -652,7 +657,7 @@ footer{background:#020508;border-top:1px solid var(--orange-border);padding:64px
           <div class="c-icon">🌐</div>
           <div>
             <h4>Website</h4>
-            <a href="https://nynindustries.com" target="_blank">www.nynindustries.com</a>
+            <a href="https://nynindustries.com" target="_blank" rel="noopener noreferrer">www.nynindustries.com</a>
           </div>
         </div>
         <div class="c-detail">
@@ -669,7 +674,7 @@ footer{background:#020508;border-top:1px solid var(--orange-border);padding:64px
         </div>
       </div>
       <div>
-        <div id="fsuccess" class="fsuccess">✓ &nbsp;Thank you! We'll respond within 24 business hours.<br><a id="wa-link" href="#" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:#25D366;color:#000;padding:11px 22px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.5px;text-decoration:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)">💬 &nbsp;Also ping us on WhatsApp</a></div>
+        <div id="fsuccess" class="fsuccess">✓ &nbsp;Thank you! We'll respond within 24 business hours.<br><a id="wa-link" href="#" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:#25D366;color:#000;padding:11px 22px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.5px;text-decoration:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)">💬 &nbsp;Also ping us on WhatsApp</a></div>
         <form class="enq-form" id="eform" onsubmit="doSubmit(event)">
           <input type="hidden" name="access_key" value="2332c391-fb8d-4148-9b0b-92f2ed6545cf">
           <input type="hidden" name="subject" value="New Enquiry – NYN Industries Website">
@@ -745,7 +750,7 @@ footer{background:#020508;border-top:1px solid var(--orange-border);padding:64px
           <li><a href="#customers">Our Clients</a></li>
           <li><a href="#commitment">Our Commitment</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="https://nynindustries.com" target="_blank">nynindustries.com</a></li>
+          <li><a href="https://nynindustries.com" target="_blank" rel="noopener noreferrer">nynindustries.com</a></li>
         </ul>
       </div>
     </div>
