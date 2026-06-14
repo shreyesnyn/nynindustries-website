@@ -638,7 +638,7 @@ footer{background:#020508;border-top:1px solid var(--orange-border);padding:64px
           <div class="c-icon">🏭</div>
           <div>
             <h4>Works / Factory</h4>
-            <p>PQ6F+WMR, Chopra Rd, Ambedkar Nagar,<br>Vithalwadi, M I D C Technology Park, Talwade,<br>Ulhasnagar, Pune, Maharashtra 411062</p>
+            <p>Plot No.46 A, Gut no. 70, Wadgaon Sajapur Road,<br>MIDC Waluj, Aurangabad.</p>
           </div>
         </div>
         <div class="c-detail">
@@ -671,6 +671,9 @@ footer{background:#020508;border-top:1px solid var(--orange-border);padding:64px
       <div>
         <div id="fsuccess" class="fsuccess">✓ &nbsp;Thank you! We'll respond within 24 business hours.<br><a id="wa-link" href="#" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:#25D366;color:#000;padding:11px 22px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.5px;text-decoration:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)">💬 &nbsp;Also ping us on WhatsApp</a></div>
         <form class="enq-form" id="eform" onsubmit="doSubmit(event)">
+          <input type="hidden" name="access_key" value="2332c391-fb8d-4148-9b0b-92f2ed6545cf">
+          <input type="hidden" name="subject" value="New Enquiry – NYN Industries Website">
+          <input type="hidden" name="from_name" value="NYN Industries Website">
           <div class="frow">
             <div class="fg"><label>Full Name *</label><input type="text" name="full-name" placeholder="Your full name" required></div>
             <div class="fg"><label>Company Name</label><input type="text" name="company" placeholder="Your company"></div>
@@ -795,9 +798,8 @@ function doSubmit(e){
   const waBtn = document.getElementById('wa-link');
   if(waBtn) waBtn.href = waURL;
 
-  // Send email via Formspree (works on any host — GoDaddy, Netlify, anywhere)
-  // IMPORTANT: Replace YOUR_FORM_ID below after signing up free at formspree.io
-  fetch('https://formspree.io/f/mjgdjywo', {
+  // Send email via Web3Forms (works on any host — GoDaddy, GitHub Pages, anywhere)
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: { 'Accept': 'application/json' },
     body: data
